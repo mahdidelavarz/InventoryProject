@@ -57,7 +57,7 @@ export default class Storage {
     } else {
       // ! make a new product progress
       product.id = new Date().getTime();
-      product.createdDate = new Date().getFullYear;
+      product.createdDate = new Date();
       savedProducts.push(product);
     }
     localStorage.setItem("product", JSON.stringify(savedProducts));

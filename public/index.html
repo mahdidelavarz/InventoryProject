@@ -19,10 +19,15 @@
         >
       </div>
       <!--! add category section -->
-      <span class="w-[40rem] mt-10 text-slate-200 cursor-pointer"
+      <span
+        class="w-[40rem] mt-10 text-slate-200 cursor-pointer"
+        id="category-title"
         >Add New Category</span
       >
-      <section class="w-[40rem] h-auto bg-slate-600 mt-2 rounded-md p-5">
+      <section
+        class="w-[40rem] h-auto bg-slate-600 mt-2 rounded-md p-5 hidden"
+        id="category-window"
+      >
         <div class="w-full h-auto flex flex-col mb-4">
           <span class="text-slate-300">Category Title</span>
           <input
@@ -43,7 +48,7 @@
         </div>
         <div class="w-full h-1/5 flex justify-between items-center mt-2">
           <button
-            class="w-64 py-2 bg-slate-600 text-slate-400 border border-slate-300 rounded-lg"
+            class="w-64 py-2 bg-slate-600 text-slate-400 border border-slate-300 rounded-lg" id="cancel-btn"
           >
             Cancel
           </button>
@@ -87,7 +92,10 @@
               <option>Select an option</option>
             </select>
           </form>
-          <button class="w-full h-8 bg-gray-300 text-zinc-800 rounded-md" id="addProduct-btn">
+          <button
+            class="w-full h-8 bg-gray-300 text-zinc-800 rounded-md"
+            id="addProduct-btn"
+          >
             Add New Product
           </button>
         </div>
@@ -101,6 +109,7 @@
             <select
               name="Sort"
               class="w-full h-8 bg-slate-600 border border-slate-400 rounded-md text-slate-400 outline-none"
+              id="filter-options"
             >
               <option value="newest">Newest</option>
               <option value="oldest">Oldest</option>
@@ -112,6 +121,7 @@
           <input
             type="text"
             class="w-40 p-1 bg-slate-600 border border-slate-400 rounded-md outline-none text-slate-300"
+            id="search-input"
           />
         </div>
         <!-- !    ---- products list -->
