@@ -1,3 +1,5 @@
+import ProductsView from "./ProductsView.js";
+
 const categories = [
   {
     id: 1,
@@ -47,8 +49,9 @@ export default class Storage {
     return sortedProducts;
   }
   static saveProducts(product) {
+    console.log('save product',product)
     const savedProducts = Storage.getAllProducts();
-    const existedProduct = savedProducts.find((p) => p.id === product.id);
+    const existedProduct = savedProducts.find((p) => {parseInt(p.id) === parseInt(product.id); console.log('p.id :' , p.id ,'product.id :', product.id) });
     if (existedProduct) {
       // ! edit product progress
       existedProduct.title = product.title;
@@ -62,4 +65,17 @@ export default class Storage {
     }
     localStorage.setItem("product", JSON.stringify(savedProducts));
   }
+  static deleteProduct(e) {
+    const products = Storage.getAllProducts();
+    const filteredProduct = products.filter(
+      (p) => p.id !== parseInt(e.target.id)
+    );
+    localStorage.setItem('product' , JSON.stringify(filteredProduct));
+  }
+  // static editProduct(id){
+  //   const products = this.getAllProducts();
+  //   const productId = e.target.dataset.id;
+  //   const selectedProduct = products.filter((p) => p.id == productId);
+  //    console.log(selectedProduct[0] , products);
+  // }
 }
