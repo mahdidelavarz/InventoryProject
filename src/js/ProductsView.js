@@ -37,11 +37,11 @@ class ProductsView {
         item.title
       }</span><div class="w-64 h-full flex justify-between items-center"><span class="text-green-300">${new Date().toLocaleDateString(
         "fa-IR"
-      )}</span><span class="border border-slate-400 rounded-2xl text-slate-300 px-2 py-1">${
+      )}</span><span class="mx-3 border border-slate-400 rounded-2xl text-slate-300 px-2 py-1">${
         item.category
-      }</span><span class="w-6 h-6 border-2 border-slate-200 bg-slate-500 text-slate-200 rounded-full p-1 flex justify-center items-center">${
+      }</span><span class="w-auto h-auto  border-2 border-slate-200 bg-slate-500 text-slate-200 rounded-full p-1 flex justify-center items-center">${
         item.quantity
-      }</span><button class="delete-btn border border-red-400 rounded-2xl text-red-300 px-2 py-1" id = ${
+      }</span><button class="delete-btn mx-3 border border-red-400 rounded-2xl text-red-300 px-2 py-1" id = ${
         item.id
       }>Delete</button><button class="edit-btn border border-green-400 rounded-2xl text-green-300 px-2 py-1" data-id='${item.id}' id = ${
         item.id
