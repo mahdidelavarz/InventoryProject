@@ -33,9 +33,9 @@ class ProductsView {
     let result = "";
     product.forEach((item) => {
       // const selectedItem = Storage.getAllCategories().find((cat) => cat.id == item.category );
-      result += `<div class="w-full h-10 flex justify-between items-center mt-4"><span class="text-slate-300">${
+      result += `<div class="w-[30rem] m:w-full h-10 flex justify-between items-center mt-4"><span class="text-slate-300">${
         item.title
-      }</span><div class="w-64 h-full flex justify-between items-center"><span class="text-green-300">${new Date().toLocaleDateString(
+      }</span><div class=" h-full flex justify-between items-center"><span class="text-green-300">${new Date().toLocaleDateString(
         "fa-IR"
       )}</span><span class="mx-3 border border-slate-400 rounded-2xl text-slate-300 px-2 py-1">${
         item.category

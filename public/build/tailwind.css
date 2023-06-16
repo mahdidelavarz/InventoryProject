@@ -558,6 +558,15 @@ video {
 .w-\[30rem\] {
   width: 30rem;
 }
+.w-\[\] {
+  width: ;
+}
+.w-\[30\] {
+  width: 30;
+}
+.w-\[30re\] {
+  width: 30re;
+}
 .cursor-pointer {
   cursor: pointer;
 }
