@@ -33,13 +33,13 @@ class ProductsView {
     let result = "";
     product.forEach((item) => {
       // const selectedItem = Storage.getAllCategories().find((cat) => cat.id == item.category );
-      result += `<div class="w-[30rem] m:w-full h-10 flex justify-between items-center mt-4"><span class="text-slate-300">${
+      result += `<div class="w-full h-10 flex justify-between items-center mt-4"><span class="text-slate-300">${
         item.title
       }</span><div class=" h-full flex justify-between items-center"><span class="text-green-300">${new Date().toLocaleDateString(
         "fa-IR"
       )}</span><span class="mx-3 border border-slate-400 rounded-2xl text-slate-300 px-2 py-1">${
         item.category
-      }</span><span class="w-auto h-auto  border-2 border-slate-200 bg-slate-500 text-slate-200 rounded-full p-1 flex justify-center items-center">${
+      }</span><span class="w-7 h-7  border-2 border-slate-200 bg-slate-500 text-slate-200 rounded-full p-1 flex justify-center items-center">${
         item.quantity
       }</span><button class="delete-btn mx-3 border border-red-400 rounded-2xl text-red-300 px-2 py-1" id = ${
         item.id

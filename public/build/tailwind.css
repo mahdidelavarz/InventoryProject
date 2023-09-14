@@ -531,6 +531,12 @@ video {
 .h-full {
   height: 100%;
 }
+.h-6 {
+  height: 1.5rem;
+}
+.h-7 {
+  height: 1.75rem;
+}
 .w-40 {
   width: 10rem;
 }
@@ -540,8 +546,8 @@ video {
 .w-64 {
   width: 16rem;
 }
-.w-\[40rem\] {
-  width: 40rem;
+.w-\[30rem\] {
+  width: 30rem;
 }
 .w-auto {
   width: auto;
@@ -552,20 +558,20 @@ video {
 .w-screen {
   width: 100vw;
 }
-.w-\[35rem\] {
-  width: 35rem;
+.w-\[22rem\] {
+  width: 22rem;
 }
-.w-\[30rem\] {
-  width: 30rem;
+.w-\[220rem\] {
+  width: 220rem;
 }
-.w-\[\] {
-  width: ;
+.w-6 {
+  width: 1.5rem;
 }
-.w-\[30\] {
-  width: 30;
+.w-8 {
+  width: 2rem;
 }
-.w-\[30re\] {
-  width: 30re;
+.w-7 {
+  width: 1.75rem;
 }
 .cursor-pointer {
   cursor: pointer;
@@ -708,19 +714,13 @@ video {
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
-@media (min-width: 640px) {
-
-  .sm\:w-\[35rem\] {
-    width: 35rem;
-  }
-}
 @media (min-width: 768px) {
 
   .md\:w-\[40rem\] {
     width: 40rem;
   }
 
-  .md\:w-40 {
-    width: 10rem;
+  .md\:w-full {
+    width: 100%;
   }
 }
