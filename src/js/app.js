@@ -8,7 +8,6 @@
 //   -> product view class
 //   -> category view class
 //   -> main and app class
-import categoryView from "./categoryView.js";
 import CategoryView from "./categoryView.js";
 import ProductsView from "./ProductsView.js";
 
